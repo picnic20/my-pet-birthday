@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우리아이 생일송 메이커</title>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__ko.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  </head>
+<body class="bg-amber-50/60 m-0 p-0">
+    
+    <div id="root"></div>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCoaW7ZDVGqsTqNjMItuuC6Drmii9wylpo",
+        authDomain: "stable-being-497702-i2.firebaseapp.com",
+        projectId: "stable-being-497702-i2",
+        storageBucket: "stable-being-497702-i2.firebasestorage.app",
+        messagingSenderId: "460437137026", // 💡 팁: SenderId는 보통 G-로 시작하는 측정ID가 아니라 프로젝트 고유 '숫자 장부 ID'가 들어가는 것이 파이어베이스UI 연동에 더 안전합니다!
+        appId: "1:460437137026:web:065fe858287e8ea0a9369b"
+      };
+
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+        console.log("✅ Firebase가 성공적으로 초기화되었습니다!");
+      }
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>

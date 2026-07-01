@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pet생일송 메이커</string>
+    <string name="title_activity_main">Pet생일송 메이커</string>
+    <string name="package_name">com.hpy.birthday</string>
+    <string name="custom_url_scheme">com.hpy.birthday</string>
+</resources>

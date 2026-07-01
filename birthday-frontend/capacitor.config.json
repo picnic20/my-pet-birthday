@@ -1,0 +1,6 @@
+{
+  "appId": "com.hpy.birthday",
+  "appName": "Pet생일송 메이커",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
