@@ -19,6 +19,17 @@ import { User } from './models/User.js';
 import { PortOneClient } from '@portone/server-sdk';
 import { authMiddleware } from './middlewares/auth.js';
 
+
+import admin from 'firebase-admin';
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+  });
+}
+
 // 💡 3. [가장 중요] ES Module 환경 설정 (__dirname 선언)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
